@@ -15,7 +15,7 @@ jobs:
     - uses: actions/checkout@v2
   
     - name: Install dependencies
-      run: apt install sudo apt-get install texlive-xetex
+      run: sudo apt install sudo apt-get install texlive-xetex
       
     - name: Add ttc
       run: wget https://github.com/chrissimpkins/codeface/raw/master/cjk-fonts/source-han-sans-HWSC/SourceHanSansHWSC-Regular.otf
