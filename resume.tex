@@ -1,0 +1,130 @@
+\documentclass{resume}
+
+\newcommand{\en}[1]{#1}
+\newcommand{\zh}[1]{}
+
+\zh{\usepackage{xeCJK}}
+\zh{\setCJKmainfont{SourceHanSansHWSC-Regular}}
+\zh{\setCJKsansfont{SourceHanSansHWSC-Regular}}
+\zh{\setCJKmonofont{SourceHanSansHWSC-Regular}}
+
+\begin{document}
+
+\name{\en{Yiwei Yang}\zh{杨易为}}
+\basicInfo{
+      \email{yangyw@shanghaitech.edu.cn} \textperiodcentered\
+      \github[victoryang00]{https://github.com/victoryang00}
+}
+
+
+\section{\en{Education}\zh{教育经历}}
+\en{\datedsubsection{\textbf{ShanghaiTech University}, Undergraduate}{09/2018 -- 06/2022}}
+\zh{\datedsubsection{\textbf{上海科技大学}, 在读本科}{2018/09 -- 2022/06}}
+\begin{itemize}
+      \item \en{Major: Computer Science, finished Compiler, Network, Database, OS, Convex, RL, Parallel Computing.}
+            \zh{计算机科学，完成编译原理，操作系统，网络，数据库，并行计算，凸优化，强化学习等课程，2021编译原理助教}
+\end{itemize}
+
+\section{\en{Work Experience}\zh{工作经历}}
+\en{\datedsubsection{\textbf{\href{https://www.jumptrading.com/}{Jump Trading}}, Shanghai, China}{07/2020 -- 09/2020}}
+\zh{\datedsubsection{\textbf{\href{https://www.jumptrading.com/}{跃申有限公司}}}{2020/07 -- 2020/08}}
+\en{\role{Linux Team}{Production Engineer Intern}}
+\zh{\role{Linux 组}{HPC自动化运维实习}}
+\begin{itemize}
+      \item \en{High Frequency Trade Order Book simulation applying Linear.Regression Method.}
+            \zh{应用线性回归法进行高频交易盘账模拟。}
+      \item \en{Applied salt and jinja to automate scheduling of jobs and assigning affinity of cpu cores in Linux DevOps.}
+            \zh{应用salt和jinja在Linux DevOps中自动调度作业和分配cpu核心绑定。}
+      \item \en{Applied gobidng of gobpf to try IOVisor stuff.}
+            \zh{应用eBPF的gobinding进行io侦测。}
+\end{itemize}
+
+\section{\en{Research Experience}\zh{研究经历}}
+\en{\datedsubsection{\textbf{\href{http://s3l.shanghaitech.edu.cn/}{System} \href{https://toast-lab.gitee.io/}{Lab}, ShanghaiTech University}}{07/2019 -- 06/2020}}
+\zh{\datedsubsection{\textbf{\href{http://s3l.shanghaitech.edu.cn/}{上海科技大学系统}\href{https://toast-lab.gitee.io/}{实验室}}}{2019/07 -- 2021/06}}
+\en{\role{Undergraduate Research}{Intern}}
+\zh{\role{本科生科研}{实习}}
+\begin{itemize}
+      \item Zhao, Zhe, Guangke Chen, Jingyi Wang, \textbf{Yiwei Yang}, Fu Song, and Jun Sun. "Attack as Defense: Characterizing Adversarial Examples using Robustness."  .\\
+            \small{ \en{A2D uses the cost of attacking an input for robustness evaluation and identifies those less robust examples as adversarial since less robust examples are easier to attack.}
+            \zh{A2D使用攻击输入的成本来进行鲁棒性评估，并将那些鲁棒性较差的例子确定为对抗性，因为鲁棒性较差的例子更容易被攻击。}}
+      \item \en{Researching MOVE language in Libra currency source code to protect against Arithmetic Overflow, Timestamp Difference.}
+            \zh{研究libra源码中的MOVE prover，提高抵御时间戳攻击、整数溢出等的安全性。}
+      \item \en{Understanding the real access mechanism of Memory Mode Optane Memory and XPBuffer by reverse-engineering methods.}
+            \zh{通过逆向工程的相关手段去理解在memory mode 下傲腾内存以及XPBuffer的访存逻辑。}
+\end{itemize}
+
+\en{\datedsubsection{\textbf{\href{http://mir.cs.illinois.edu/marinov/}{Darko Marinov's Lab}, \href{https://illinois.edu}{University of Illinois at Urbana-Champaign}}}{07/2021 -- Present}}
+\zh{\datedsubsection{\textbf{\href{https://illinois.edu}{伊利诺伊大学厄巴纳-香槟分校}\href{http://mir.cs.illinois.edu/marinov/}{Darko Marinov组}}}{2021/07 -- 现在}}
+\en{\role{Research Experience for Undergraduate}{Remote Program}}
+\zh{\role{本科生科研}{暑研项目}}
+\begin{itemize}
+      \item \en{Investigating Order dependent Flacky Tests.}
+            \zh{使用Flacky Test进行数据竞争检查。}
+\end{itemize}
+
+
+
+\section{\en{Portfolios}\zh{团队项目}}
+\datedsubsection{\textbf{Pint OS (Rust)}}{\small{\url{https://github.com/victoryang00/PintOS}}}
+\en{A Stanford based Tiny x86 single thread multi process Operating System and WIP rust ABI}
+\zh{一个玩具x86单核多线程操作系统，同时在写rust ABI层。}
+\small{ \en{Implemented Thread, User Program (Argument Passing) Virtual Memory and File System.}\zh{实现了线程，Syscall和虚拟内存以及文件系统。}}
+
+\datedsubsection{\textbf{Cuckoo Hashing}}{\small{\url{https://github.com/victoryang00/CuckooHashing}}}
+\en{A Novel Hash method using GPU}
+\zh{一个在GPU上新颖的hash方法}
+\small{ \en{Implement full two table cuckoo Hash table using CUDA intrinsic.}\zh{实现了双表杜鹃鸟表，这在数据降维等方面很有用处。}}
+
+\datedsubsection{\textbf{ChocoPy Compiler}}{\small{\url{http://s3l.shanghaitech.edu.cn:8081/yangyw/chocopy}}}
+\en{A compiler to LLVM IR and to riscv assembly of python 3.6 subset as ShanghaiTech Compiler class project}
+\zh{一个从 python3.6 子集编译至 LLVM IR 和 riscv 汇编的编译器，作为编译原理课的 project}
+
+\section{\en{Skills}\zh{技能}}
+\begin{itemize}[parsep=0.25ex]
+      \item \en{\textbf{Programming Languages}:
+                  not limited to any specific language,
+                  and experienced in Python/Golang,
+                  comfortable with Rust/C/C++/Java/Scala/TypeScript (in random order).}
+            \zh{\textbf{编程语言}:
+                  不局限于特定编程语言，且尤其熟悉 Python/Golang 等，
+                  了解 Rust/C/C++/Java/Scala/TypeScript 等（不分先后）。}
+
+      \item \en{\textbf{System}:
+                  familiar with operating system concepts and design,
+                  have experience in optimizing performance on kernel level using tools
+                  like \texttt{ebpf} and \texttt{strace}.}
+            \zh{\textbf{系统}:
+                  熟悉各种操作系统内核的概念与设计，熟悉各种内核性能调优工具，例如 \texttt{ebpf} 和 \texttt{strace}。}
+
+      \item \en{\textbf{Machine Learning}:
+                  familiar with general knowledge of machine \& reinforce learning.}
+            \zh{\textbf{机器学习}:
+                  熟悉经典机器与强化学习算法。}
+
+      \item \en{\textbf{Developing Tools}:
+                  experienced in Linux-based programming,
+                  have experience with team tools like Confluence, Jira, Git, etc, DevOps tools like grafana, jenkins, ansible, etc.}
+            \zh{\textbf{开发工具}:
+                  十分熟悉 Linux，有 Confluence、Jira、Git 等团队合作工具以及grafana、jenkins、ansible等集群自动化等工具的经验。}
+\end{itemize}
+
+\section{\en{Miscellaneous}\zh{其他}}
+\begin{itemize}
+      \item \en{Interests: Computer Architecture and System, Software Engineering.}
+            \zh{兴趣：高性能计算、存储、形式化验证安全等。}
+      \item \en{Awards:}
+      \zh{所获奖项：}
+      \begin{itemize}
+      \item \en{Lead \href{https://hpc.geekpie.club}{GeekPie\_HPC} \textit{Ranked 2}, SC-SCC21. \textit{Ranked 8}, ISC21.}
+            \zh{带领\href{https://hpc.geekpie.club}{GeekPie\_HPC} SCC20 团队第9名，SCC21 团队第2名，ISC21 团队第8名}
+      \item \en{As a member of \href{https://github.com/0x238e/Vchain}{0x238e} \textit{Best award}, Bitrun, Hang Zhou, 2019.}
+            \zh{带领\href{https://github.com/0x238e/Vchain}{0x238e} Bitrun Hackathon 比赛最佳奖}
+      \item \en{\textit{Second Award}, Shanghai CTF invitation competition, 2019.}
+            \zh{上海2019年 CTF 邀请赛比赛二等奖}
+      \end{itemize}
+      \item \en{opensource: \href{https://github.com/geekpiehpc/collective_profiler}{collective\_profiler}}
+      \zh{开源项目贡献：\href{https://github.com/geekpiehpc/collective_profiler}{collective\_profiler} }
+\end{itemize}
+
+\end{document}
