@@ -1,0 +1,24 @@
+name: Makefile CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+  
+    - name: Install dependencies
+      run: apt install sudo apt-get install texlive-xetex
+      
+    - name: Add ttc
+      run: wget https://github.com/chrissimpkins/codeface/raw/master/cjk-fonts/source-han-sans-HWSC/SourceHanSansHWSC-Regular.otf
+      
+    - name: Compile
+      run: make all
