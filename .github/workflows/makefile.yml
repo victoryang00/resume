@@ -18,11 +18,13 @@ jobs:
        uses: docker://yangyw12345/tex-builder
        with:
          args: make all
-     - uses: actions/upload-artifact@v2
-       with:
-         name: PDF
-         path: resume.pdf
-     - uses: actions/upload-artifact@v2
-       with:
-         name: PDF
-         path: resume-zh.pdf
+      - name: Upload Release Asset
+        id: upload-release-asset 
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps 
+          asset_path: ./*.pdf
+          asset_name: resume
+          asset_content_type: application/pdf
