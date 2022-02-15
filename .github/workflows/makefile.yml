@@ -17,4 +17,12 @@ jobs:
      - name: run docker container
        uses: docker://yangyw12345/tex-builder
        with:
-         args: ln -sf ~/.fonts/SourceHanSansHWSC-Regular . && make all
+         args: make all
+     - uses: actions/upload-artifact@v2
+       with:
+         name: PDF
+         path: resume.pdf
+     - uses: actions/upload-artifact@v2
+       with:
+         name: PDF
+         path: resume-zh.pdf
