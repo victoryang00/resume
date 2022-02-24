@@ -1,4 +1,4 @@
-all: clean en zh
+all: clean zh en
 
 en: resume.tex
 	xelatex resume.tex
