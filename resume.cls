@@ -8,6 +8,7 @@
 \RequirePackage{xifthen}
 % use hyperlink for email and url
 \RequirePackage{hyperref}
+\RequirePackage{graphicx}
 \RequirePackage{url}
 \urlstyle{tt}
 % loading fonts

@@ -4,7 +4,7 @@
 \newcommand{\zh}[1]{}
 
 \zh{\usepackage{xeCJK}}
-\zh{\setCJKmainfont{SourceHanSansCN-Regular}}
+% \zh{\setCJKmainfont{SourceHanSansCN-Regular}}
 % \zh{\setCJKsansfont{SourceHanSansHWSC-Regular}}
 % \zh{\setCJKmonofont{SourceHanSansHWSC-Regular}}
 
@@ -53,14 +53,18 @@
 \en{\role{Graduate Research}{Assistant}}
 \zh{\role{研究生科研}{助理}}
 \begin{itemize}
-      \item \small{ \en{Understand the performance characteristics of CXL.mem systems. Data-driven far memory allocation, prefetching, and replacement policies. } \zh{理解CXL.mem的性能分析。数据驱动的远端内存分配、预取和替换策略。}}
+      \item \small{ \en{Understand the performance characteristics of CXL.mem systems. Data-driven far memory allocation, prefetching, and replacement policies. } \zh{理解CXL.mem的性能分析。数据驱动的远端内存分配、预取和替换策略。}}\includegraphics[width=\linewidth/38]{cxl.png}
       \item \small{ \en{Make Hardware Software Co-design for on CXL.cache data movement}
-      \zh{设计一种硬件软件协同的CXL.cache数据迁移方法。}}
+      \zh{设计一种硬件软件协同的CXL.cache数据迁移方法。}}\includegraphics[width=\linewidth/38]{cxlmemuring.png}
       \item \small{ \en{Make Virtual Machine migration based on WebAssembly and WASI}
-      \zh{设计一种基于WebAssembly和WASI的虚拟机迁移方法。}}
+      \zh{设计一种基于WebAssembly和WASI的虚拟机迁移方法。}}\includegraphics[width=\linewidth/38]{webassembly.png}
+      \item \small{ \en{Make cross kernel-userspace eBPF observation for distributed system}
+      \zh{设计一种基于用户态内核态eBPF协同工作的分布式系统。}}\includegraphics[width=\linewidth/38]{ebpf.png}
 \end{itemize}
 
 \section{\en{Publications}\zh{论文}}
+\href{https://arxiv.org/abs/2311.07923.pdf}{\textbf{"bpftime: userspace eBPF Runtime for Uprobe, Syscall and Kernel-User Interactions"} LPC23} Yusheng Zheng,Tong Yu, \textbf{Yiwei Yang}, Yanpeng Hu, Xiaozheng Lai, Andrew Quinn.
+
 \href{https://arxiv.org/pdf/2303.06153.pdf}{\textbf{"CXLMemSim: A pure software simulated CXL.mem for performance characterization."} Yarch23} \textbf{Yiwei Yang} Pooneh Safayenikoo, Jiacheng Ma, Tanvir Ahmad Khan, Andrew Quinn.
 
 \href{https://arxiv.org/pdf/2103.07633.pdf}{\textbf{"Attack as Defense: Characterizing Adversarial Examples using Robustness."} ISSTA21} Zhao, Zhe, Guangke Chen, Jingyi Wang, \textbf{Yiwei Yang}, Fu Song, and Jun Sun. 
@@ -90,9 +94,7 @@
 
 
 \section{\en{Portfolios}\zh{项目}}
-\datedsubsection{\href{https://github.com/chocopy-llvm/chocopy-llvm}{\textbf{ChocoPy Compiler\tiny{https://github.com/chocopy-llvm/chocopy-llvm}}}}{\tiny{\en{A compiler to LLVM IR and to riscv assembly of python 3.6 subset as ShanghaiTech Compiler class project}
-\zh{一个从 python3.6 子集编译至 LLVM IR 和 riscv 汇编的编译器，作为编译原理课的 project}
-}}
+\datedsubsection{\href{https://github.com/eunomia-bpf/bpftime/}{\textbf{bpftime\tiny{https://github.com/eunomia-bpf/bpftime/}}}}{\tiny{\en{Make cross boundary observation for the kernel}\zh{提供跨内核态用户态观测机制的工具}}}
 
 \datedsubsection{\href{https://github.com/LemonHX/ioring-rs}{\textbf{IORing Rust\tiny{https://github.com/LemonHX/ioring-rs}}}}{\tiny{\en{IORing Rust for windows, support \href{https://github.com/bytedance/monoio}{monoio}}\zh{windows上的IORing Rust版，支持\href{https://github.com/bytedance/monoio}{monoio}}}}
 
