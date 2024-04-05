@@ -53,19 +53,21 @@
 \en{\role{Graduate Research}{Assistant}}
 \zh{\role{研究生科研}{助理}}
 \begin{itemize}
-      \item \small{ \en{Understand the performance characteristics of CXL.mem systems. Data-driven far memory allocation, prefetching, and replacement policies. } \zh{理解CXL.mem的性能分析。数据驱动的远端内存分配、预取和替换策略。}}\includegraphics[width=\linewidth/38]{cxl.png}
+      \item \small{ \en{Data-driven CXL.mem allocation, prefetching, and replacement policies. } \zh{理解CXL.mem的性能分析。数据驱动的远端内存分配、预取和替换策略。}}\includegraphics[width=\linewidth/40]{cxl.png}
       \item \small{ \en{Make Hardware Software Co-design for on CXL.cache data movement}
-      \zh{设计一种硬件软件协同的CXL.cache数据迁移方法。}}\includegraphics[width=\linewidth/38]{cxlmemuring.png}
+      \zh{设计一种硬件软件协同的CXL.cache数据迁移方法。}}\includegraphics[width=\linewidth/40]{cxlmemuring.png}
       \item \small{ \en{Make Virtual Machine migration based on WebAssembly and WASI}
-      \zh{设计一种基于WebAssembly和WASI的虚拟机迁移方法。}}\includegraphics[width=\linewidth/38]{webassembly.png}
-      \item \small{ \en{Make cross kernel-userspace eBPF observation for distributed system}
-      \zh{设计一种基于用户态内核态eBPF协同工作的分布式系统。}}\includegraphics[width=\linewidth/38]{ebpf.png}
+      \zh{设计一种基于WebAssembly和WASI的虚拟机迁移方法。}}\includegraphics[width=\linewidth/40]{webassembly.png}
+      \item \small{ \en{Make cross kernel-userspace eBPF observation for distributed system, Intel CET assisted superset dissasembly of X86 CISC of COTS binaries}
+      \zh{设计一种基于用户态内核态eBPF协同工作的分布式系统。实现 Intel CET 辅助的 x86 binary的超集反编译。}}\includegraphics[width=\linewidth/40]{ebpf.png}
 \end{itemize}
 
 \section{\en{Publications}\zh{论文}}
-\href{https://arxiv.org/abs/2311.07923.pdf}{\textbf{"bpftime: userspace eBPF Runtime for Uprobe, Syscall and Kernel-User Interactions"} LPC23} Yusheng Zheng,Tong Yu, \textbf{Yiwei Yang}, Yanpeng Hu, Xiaozheng Lai, Andrew Quinn.
+\href{https://arxiv.org/abs/2312.05531.pdf}{\textbf{"KEN: Kernel Extensions using Natural Language"} Preprint} Yusheng Zheng, \textbf{Yiwei Yang}, Maolin Chen, Andrew Quinn.
 
-\href{https://arxiv.org/pdf/2303.06153.pdf}{\textbf{"CXLMemSim: A pure software simulated CXL.mem for performance characterization."} Yarch23} \textbf{Yiwei Yang} Pooneh Safayenikoo, Jiacheng Ma, Tanvir Ahmad Khan, Andrew Quinn.
+\href{https://arxiv.org/abs/2311.07923.pdf}{\textbf{"bpftime: userspace eBPF Runtime for Uprobe, Syscall and Kernel-User Interactions"} Preprint} Yusheng Zheng,Tong Yu, \textbf{Yiwei Yang}, Yanpeng Hu, Xiaozheng Lai, Andrew Quinn.
+
+\href{https://arxiv.org/pdf/2303.06153.pdf}{\textbf{"CXLMemSim: A pure software simulated CXL.mem for performance characterization."} Preprint} \textbf{Yiwei Yang} Pooneh Safayenikoo, Jiacheng Ma, Tanvir Ahmad Khan, Andrew Quinn.
 
 \href{https://arxiv.org/pdf/2103.07633.pdf}{\textbf{"Attack as Defense: Characterizing Adversarial Examples using Robustness."} ISSTA21} Zhao, Zhe, Guangke Chen, Jingyi Wang, \textbf{Yiwei Yang}, Fu Song, and Jun Sun. 
       
@@ -93,16 +95,14 @@
 % \end{itemize}
 
 
-\section{\en{Portfolios}\zh{项目}}
+\section{\en{Selected Portfolios}\zh{项目}}
 \datedsubsection{\href{https://github.com/eunomia-bpf/bpftime/}{\textbf{bpftime\tiny{https://github.com/eunomia-bpf/bpftime/}}}}{\tiny{\en{Make cross boundary observation for the kernel}\zh{提供跨内核态用户态观测机制的工具}}}
-
-\datedsubsection{\href{https://github.com/LemonHX/ioring-rs}{\textbf{IORing Rust\tiny{https://github.com/LemonHX/ioring-rs}}}}{\tiny{\en{IORing Rust for windows, support \href{https://github.com/bytedance/monoio}{monoio}}\zh{windows上的IORing Rust版，支持\href{https://github.com/bytedance/monoio}{monoio}}}}
 
 \datedsubsection{\href{https://github.com/Multi-V-VM/MVVM}{\textbf{MVVM\tiny{https://github.com/Multi-V-VM/MVVM}}}}{\tiny{\en{Live migration over WebAssembly with WASI support}\zh{一种基于webassembly指令集和wasi系统调用的live migration}}}
 
 \datedsubsection{\href{https://github.com/SlugLab/Bede-linux}{\textbf{Bede-linux\tiny{https://github.com/SlugLab/Bede-linux}}}}{\tiny{\en{Per Process RSS Node Limit Linux kernel for CXL}\zh{为了CXL设计的Per Process RSS Node Limit}}}
 
-\datedsubsection{\href{https://github.com/eunomia-bpf/OpenCopilot}{\textbf{OpenCopilot\tiny{https://github.com/eunomia-bpf/OpenCopilot}}}}{\tiny{\en{Open source implementation of Windows Copilot for system maintainance}\zh{用于系统维护的 Windows Copilot 开放源码实施方案}}}
+\datedsubsection{\href{https://github.com/victoryang00/rustc-codegen-everything-gpu}{\textbf{rustc-codegen-everything-gpu\tiny{https://github.com/victoryang00/rustc-codegen-everything-gpu}}}}{\tiny{\en{Rust GPU backend for everything}\zh{Rust spirv， webgpu，amdrocm，nvptx后端，为了实现GPU live migration}}}
 
 \section{\en{Skills}\zh{技能}}
 \begin{itemize}[parsep=0.25ex]
@@ -129,16 +129,12 @@
 \begin{itemize}
       \item \en{Interests: Computer Architecture, Storage System, Formal Methods, etc.}
             \zh{兴趣：高性能计算、体系结构、存储、形式化验证安全等。}
-      \item \en{Awards:}
-      \zh{所获奖项：}
-      \begin{itemize}
-      \item \en{Lead \href{https://hpc.geekpie.club}{GeekPie\_HPC} \textit{Ranked 2}, SC-SCC21. \textit{Ranked 4}, ISC22. Advise Not-Slow-Slug \textit{Ranked 2}, ISC23.}
-            \zh{带领\href{https://hpc.geekpie.club}{GeekPie\_HPC} SCC21 团队第2名，ISC22 团队第4名，指导 Not-Slow-Slug 团队 ISC23 团队第2名。}
-      \item \en{As a member of \href{https://github.com/0x238e/Vchain}{0x238e} \textit{Best award}, Bitrun, Hang Zhou, 2019.}
-            \zh{带领\href{https://github.com/0x238e/Vchain}{0x238e} Bitrun Hackathon 比赛最佳奖}
-      \item \en{\textit{Second Award}, Shanghai CTF invitation competition, 2019.}
-            \zh{上海2019年 CTF 邀请赛比赛二等奖}
-      \end{itemize}
+      \item \en{Advise Kiki Zhang to be HCI Ph.D. student at SCU.}\zh{指导Kiki Zhang 成为 SCU HCI Ph.D. 学生。}
+      \item \en{Lead \href{https://hpc.geekpie.club}{GeekPie\_HPC} \textit{Ranked 2}, SC-SCC21. \textit{Ranked 4}, ISC22. Advise Not-Slow-Slug \textit{Ranked 2}, ISC23.} \zh{带领\href{https://hpc.geekpie.club}{GeekPie\_HPC} SCC21 团队第2名，ISC22 团队第4名，指导 Not-Slow-Slug 团队 ISC23 团队第2名。}
+      % \item \en{As a member of \href{https://github.com/0x238e/Vchain}{0x238e} \textit{Best award}, Bitrun, Hang Zhou, 2019.}
+      %       \zh{带领\href{https://github.com/0x238e/Vchain}{0x238e} Bitrun Hackathon 比赛最佳奖}
+      % \item \en{\textit{Second Award}, Shanghai CTF invitation competition, 2019.}
+      %       \zh{上海2019年 CTF 邀请赛比赛二等奖}
 \end{itemize}
 
 \end{document}
