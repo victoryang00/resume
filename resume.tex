@@ -20,7 +20,7 @@
 
 \section{\en{Education}\zh{教育经历}}
 \en{\datedsubsection{\textbf{UC Santa Cruz}, Ph.D. Student}{08/2022 -- 06/2028}}
-\zh{\datedsubsection{\textbf{加州大学圣克鲁兹分校}, 在读Ph.D.}{2018/09 -- 2022/06}}
+\zh{\datedsubsection{\textbf{加州大学圣克鲁兹分校}, 在读Ph.D.}{2022/09 -- 2028/06}}
 \begin{itemize}
       \item \en{Major: Computer Science, advised by \href{https://arquinn.github.io/}{Andrew Quinn}. 22 Fall TA of Computer Architecture}
             \zh{计算机科学，导师为\href{https://arquinn.github.io/}{Andrew Quinn}，2022秋体系结构助教}
@@ -58,16 +58,18 @@
       \zh{设计一种硬件软件协同的CXL.cache数据迁移方法。}}\includegraphics[width=\linewidth/40]{cxlmemuring.png}
       \item \small{ \en{Make Virtual Machine migration based on WebAssembly and WASI}
       \zh{设计一种基于WebAssembly和WASI的虚拟机迁移方法。}}\includegraphics[width=\linewidth/40]{webassembly.png}
-      \item \small{ \en{Make cross kernel-userspace eBPF observation for distributed system, Intel CET assisted superset dissasembly of X86 CISC of COTS binaries}
-      \zh{设计一种基于用户态内核态eBPF协同工作的分布式系统。实现 Intel CET 辅助的 x86 binary的超集反编译。}}\includegraphics[width=\linewidth/40]{ebpf.png}
+      \item \small{ \en{Make cross kernel-userspace eBPF observation for distributed system}
+      \zh{设计一种基于用户态内核态eBPF协同工作的分布式系统。}}\includegraphics[width=\linewidth/40]{ebpf.png}
 \end{itemize}
 
 \section{\en{Publications}\zh{论文}}
+\href{https://arxiv.org/abs/2312.05531.pdf}{\textbf{"wasm-bpf: Streamlining eBPF Deployment in Cloud Environments with WebAssembly"} Preprint} Yusheng Zheng, Tong Yu, \textbf{Yiwei Yang}, Andrew Quinn.
+
 \href{https://arxiv.org/abs/2312.05531.pdf}{\textbf{"KEN: Kernel Extensions using Natural Language"} Preprint} Yusheng Zheng, \textbf{Yiwei Yang}, Maolin Chen, Andrew Quinn.
 
-\href{https://arxiv.org/abs/2311.07923.pdf}{\textbf{"bpftime: userspace eBPF Runtime for Uprobe, Syscall and Kernel-User Interactions"} Preprint} Yusheng Zheng,Tong Yu, \textbf{Yiwei Yang}, Yanpeng Hu, Xiaozheng Lai, Andrew Quinn.
+\href{https://arxiv.org/abs/2311.07923.pdf}{\textbf{"bpftime: userspace eBPF Runtime for Uprobe, Syscall and Kernel-User Interactions"} Preprint} Yusheng Zheng, Tong Yu, \textbf{Yiwei Yang}, Yanpeng Hu, Xiaozheng Lai, Andrew Quinn.
 
-\href{https://arxiv.org/pdf/2303.06153.pdf}{\textbf{"CXLMemSim: A pure software simulated CXL.mem for performance characterization."} Preprint} \textbf{Yiwei Yang} Pooneh Safayenikoo, Jiacheng Ma, Tanvir Ahmad Khan, Andrew Quinn.
+\href{https://arxiv.org/pdf/2303.06153.pdf}{\textbf{"CXLMemSim: A pure software simulated CXL.mem for performance characterization."} Yarch23} \textbf{Yiwei Yang} Pooneh Safayenikoo, Jiacheng Ma, Tanvir Ahmad Khan, Andrew Quinn.
 
 \href{https://arxiv.org/pdf/2103.07633.pdf}{\textbf{"Attack as Defense: Characterizing Adversarial Examples using Robustness."} ISSTA21} Zhao, Zhe, Guangke Chen, Jingyi Wang, \textbf{Yiwei Yang}, Fu Song, and Jun Sun. 
       
@@ -102,7 +104,7 @@
 
 \datedsubsection{\href{https://github.com/SlugLab/Bede-linux}{\textbf{Bede-linux\tiny{https://github.com/SlugLab/Bede-linux}}}}{\tiny{\en{Per Process RSS Node Limit Linux kernel for CXL}\zh{为了CXL设计的Per Process RSS Node Limit}}}
 
-\datedsubsection{\href{https://github.com/victoryang00/rustc-codegen-everything-gpu}{\textbf{rustc-codegen-everything-gpu\tiny{https://github.com/victoryang00/rustc-codegen-everything-gpu}}}}{\tiny{\en{Rust GPU backend for everything}\zh{Rust spirv， webgpu，amdrocm，nvptx后端，为了实现GPU live migration}}}
+% \datedsubsection{\href{https://github.com/victoryang00/rustc-codegen-everything-gpu}{\textbf{rustc-codegen-everything-gpu\tiny{https://github.com/victoryang00/rustc-codegen-everything-gpu}}}}{\tiny{\en{Rust GPU backend for everything}\zh{Rust spirv， webgpu，amdrocm，nvptx后端，为了实现GPU live migration}}}
 
 \section{\en{Skills}\zh{技能}}
 \begin{itemize}[parsep=0.25ex]
@@ -133,8 +135,8 @@
       \item \en{Lead \href{https://hpc.geekpie.club}{GeekPie\_HPC} \textit{Ranked 2}, SC-SCC21. \textit{Ranked 4}, ISC22. Advise Not-Slow-Slug \textit{Ranked 2}, ISC23.} \zh{带领\href{https://hpc.geekpie.club}{GeekPie\_HPC} SCC21 团队第2名，ISC22 团队第4名，指导 Not-Slow-Slug 团队 ISC23 团队第2名。}
       % \item \en{As a member of \href{https://github.com/0x238e/Vchain}{0x238e} \textit{Best award}, Bitrun, Hang Zhou, 2019.}
       %       \zh{带领\href{https://github.com/0x238e/Vchain}{0x238e} Bitrun Hackathon 比赛最佳奖}
-      % \item \en{\textit{Second Award}, Shanghai CTF invitation competition, 2019.}
-      %       \zh{上海2019年 CTF 邀请赛比赛二等奖}
+      \item \en{Google Summer of Code Mentor for BPFTime}
+            \zh{谷歌编程之夏 BPFTime 指导}
 \end{itemize}
 
 \end{document}
