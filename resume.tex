@@ -56,22 +56,25 @@
       \item \small{ \en{Data-driven CXL.mem allocation, prefetching, and replacement policies. } \zh{理解CXL.mem的性能分析。数据驱动的远端内存分配、预取和替换策略。}}\includegraphics[width=\linewidth/40]{cxl.png}
       \item \small{ \en{Make Hardware Software Co-design for on CXL.cache data movement}
       \zh{设计一种硬件软件协同的CXL.cache数据迁移方法。}}\includegraphics[width=\linewidth/40]{cxlmemuring.png}
-      \item \small{ \en{Make Virtual Machine migration based on WebAssembly and WASI}
-      \zh{设计一种基于WebAssembly和WASI的虚拟机迁移方法。}}\includegraphics[width=\linewidth/40]{webassembly.png}
       \item \small{ \en{Make cross kernel-userspace eBPF observation for distributed system}
       \zh{设计一种基于用户态内核态eBPF协同工作的分布式系统。}}\includegraphics[width=\linewidth/40]{ebpf.png}
 \end{itemize}
 
-\section{\en{Publications}\zh{论文}}
+\section{\en{Selected Publications}\zh{主要论文}}
+
+\href{https://dl.acm.org/doi/10.1145/3723851.3726984}{\textbf{"eGPU: Extending eBPF Programmability and Observability to GPUs"} HCDS25} \textbf{Yiwei Yang}, Tong Yu, Yusheng Zheng, Andrew Quinn.
+
+\href{https://dl.acm.org/doi/10.1145/3723851.3726985}{\textbf{"wBPF: Efficient Edge-Case Observability for CXL Pooling systems via eBPF"} HCDS25} Yusheng Zheng,Tong Yu ,\textbf{Yiwei Yang} , Andrew Quinn.
+
 \href{https://arxiv.org/pdf/2311.07923}{\textbf{"Extending Applications Safely and Efficiently"} OSDI25} Yusheng Zheng, Tong Yu, \textbf{Yiwei Yang}, Yanpeng Hu, Xiaozheng Lai, Dan Williams, Andrew Quinn.
 
 \href{https://arxiv.org/pdf/2410.15894}{\textbf{"Transparent and Efficient Live Migration across Heterogeneous Hosts with Wharf"} Preprint} \textbf{Yiwei Yang}, Aibo Hu, Yusheng Zheng, Brian Zhao, Xinqi Zhang, Andrew Quinn
 
-\href{https://arxiv.org/pdf/2312.05531}{\textbf{"KEN: Kernel Extensions using Natural Language"} eBPF24} Yusheng Zheng, \textbf{Yiwei Yang}, Maolin Chen, Andrew Quinn.
+% \href{https://arxiv.org/pdf/2312.05531}{\textbf{"KEN: Kernel Extensions using Natural Language"} eBPF24} Yusheng Zheng, \textbf{Yiwei Yang}, Maolin Chen, Andrew Quinn.
 
 \href{https://arxiv.org/pdf/2303.06153}{\textbf{"CXLMemSim: A pure software simulated CXL.mem for performance characterization."} Yarch23} \textbf{Yiwei Yang} Pooneh Safayenikoo, Jiacheng Ma, Tanvir Ahmad Khan, Andrew Quinn.
 
-\href{https://arxiv.org/pdf/2103.07633}{\textbf{"Attack as Defense: Characterizing Adversarial Examples using Robustness."} ISSTA21} Zhao, Zhe, Guangke Chen, Jingyi Wang, \textbf{Yiwei Yang}, Fu Song, and Jun Sun. 
+% \href{https://arxiv.org/pdf/2103.07633}{\textbf{"Attack as Defense: Characterizing Adversarial Examples using Robustness."} ISSTA21} Zhao, Zhe, Guangke Chen, Jingyi Wang, \textbf{Yiwei Yang}, Fu Song, and Jun Sun. 
       
 % \en{\datedsubsection{\textbf{\href{http://mir.cs.illinois.edu/marinov/}{Darko Marinov's Lab}, \href{https://illinois.edu}{University of Illinois at Urbana-Champaign}}}{07/2021 -- 10/2021}}
 % \zh{\datedsubsection{\textbf{\href{https://illinois.edu}{伊利诺伊大学厄巴纳-香槟分校}\href{http://mir.cs.illinois.edu/marinov/}{Darko Marinov组}}}{2021/07 -- 2021/10}}
@@ -98,11 +101,15 @@
 
 
 \section{\en{Selected Portfolios}\zh{项目}}
-\datedsubsection{\href{https://github.com/eunomia-bpf/bpftime/}{\textbf{bpftime\tiny{https://github.com/eunomia-bpf/bpftime/}}}}{\tiny{\en{Make cross boundary observation for the kernel}\zh{提供跨内核态用户态观测机制的工具}}}
+\datedsubsection{\href{https://github.com/Sluglab/tva}{\textbf{TVA\tiny{https://github.com/Sluglab/TVA}}}}{\tiny{\en{Exploiting Control-flow Enforcement Technology for Sound and Precise Static Binary Disassembly}\zh{利用控制流执行技术进行精确静态二进制反汇编}}}
 
-\datedsubsection{\href{https://github.com/Multi-V-VM/MVVM}{\textbf{MVVM\tiny{https://github.com/Multi-V-VM/MVVM}}}}{\tiny{\en{Live migration over WebAssembly with WASI support}\zh{一种基于webassembly指令集和wasi系统调用的live migration}}}
+% \datedsubsection{\href{https://github.com/eunomia-bpf/bpftime/}{\textbf{bpftime\tiny{https://github.com/eunomia-bpf/bpftime/}}}}{\tiny{\en{Make cross boundary observation for the kernel}\zh{提供跨内核态用户态观测机制的工具}}}
 
-\datedsubsection{\href{https://github.com/SlugLab/Bede-linux}{\textbf{Bede-linux\tiny{https://github.com/SlugLab/Bede-linux}}}}{\tiny{\en{Per Process RSS Node Limit Linux kernel for CXL}\zh{为了CXL设计的Per Process RSS Node Limit}}}
+% \datedsubsection{\href{https://github.com/eunomia-bpf/bpftime-super/}{\textbf{bpftime-super\tiny{https://github.com/eunomia-bpf/bpftime-super/}}}}{\tiny{\en{Make eBPF for GPU}\zh{为GPU设计的eBPF}}}
+
+\datedsubsection{\href{https://github.com/Multi-V-VM/MVVM}{\textbf{MVVM\tiny{https://github.com/Multi-V-VM/MVVM}}}}{\tiny{\en{An LLM agent debugging playground}\zh{一个 LLM agent 调试的 playground}}}
+
+\datedsubsection{\href{https://github.com/victoryang00/ZLUDA}{\textbf{ZLUDA\tiny{https://github.com/victoryang00/ZLUDA}}}}{\tiny{\en{Live Migration middleware for Heterogeneous GPU}\zh{为了 HeteroGPU Live Migration 设计的中间层}}}
 
 % \datedsubsection{\href{https://github.com/victoryang00/rustc-codegen-everything-gpu}{\textbf{rustc-codegen-everything-gpu\tiny{https://github.com/victoryang00/rustc-codegen-everything-gpu}}}}{\tiny{\en{Rust GPU backend for everything}\zh{Rust spirv， webgpu，amdrocm，nvptx后端，为了实现GPU live migration}}}
 
